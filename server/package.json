@@ -5,8 +5,7 @@
   "main": "api/server.js",
   "scripts": {
     "start": "node api/server.js",
-    "dev": "nodemon api/server.js",
-    "vercel-build": "npx prisma migrate deploy"
+    "dev": "nodemon api/server.js"
   },
   "keywords": [],
   "author": "",
