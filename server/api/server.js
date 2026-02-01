@@ -28,7 +28,7 @@ app.use(cors(corsOptions));
 app.use('/api/customer', customerRoutes);
 
 app.get('/', (req, res) => {
-    res.status(200).json({success: true, messege: "Response from the backend"})
+    res.status(200).json({success: true, messege: "Response from the server"})
 })
 
 export default app;
