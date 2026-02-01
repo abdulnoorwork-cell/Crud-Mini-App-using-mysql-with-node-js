@@ -31,4 +31,8 @@ app.get('/', (req, res) => {
     res.status(200).json("Response from the server")
 })
 
+app.listen(Port,()=>{
+    console.log(`Server running on port ${Port}`);
+})
+
 export default app;
