@@ -5,7 +5,6 @@ import cors from 'cors'
 const app = express();
 const Port = process.env.PORT;
 import customerRoutes from '../routes/customer.routes.js'
-import db from '../config/dbConnection.js';
 
 app.use(express.json())
 app.use(express.urlencoded({
@@ -32,10 +31,8 @@ app.get('/', (req, res) => {
     res.status(200).json({success: true, messege: "Response from the server"})
 })
 
-// app.listen(Port,()=>{
-//     console.log(`Server is running on port ${Port}`)
-// })
-
-db();
+app.listen(Port,()=>{
+    console.log(`Server is running on port ${Port}`)
+})
 
 export default app;
